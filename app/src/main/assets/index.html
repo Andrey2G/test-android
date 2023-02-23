@@ -2,12 +2,16 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+	<link rel="apple-touch-icon" href="57.png" />
 	<meta name="viewport" content="width=device-width,user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="apple-touch-fullscreen" content="YES" />
 </head>
 <body>
-	<div id="q-module"></div>
+    <div> </br></div>
+	<div id="q-module" class="hidden"></div>
 	<div id="t-list"></div>
-	<div id="questions" class="hidden">
+    <div id="questions" class="hidden">
 		<div id="q-hdr">
 			<div id="q-topic">topic</div>
 			<div id="q-hdr-b">
@@ -20,7 +24,7 @@
 			<div id="q-questions">
 				<div id="q" class="t-q"></div>
 				<ul id="q-options">
-          <li id="q-a" class="q-opt"></li>
+					<li id="q-a" class="q-opt"></li>
 					<li id="q-b" class="q-opt"></li>
 					<li id="q-c" class="q-opt"></li>
 					<li id="q-d" class="q-opt"></li>
@@ -32,8 +36,8 @@
 						<button id="q-no">False</button>
 					</div>
 				</div>
-				<div id="q-words" class="hidden">
-					<input type="text" id="q-input"><button id="q-words-ok">OK</button>
+				<div id="q-words" class="hidden" contenteditable='true' >
+					<input type="text" id="q-input" autocorrect="off" autocapitalize="off" autofocus='true'><button id="q-words-ok">OK</button>
 				</div>
 				<div id="q-nlabel">Question <span id="q-num"></span> of 10</div>
 			</div>
@@ -52,19 +56,19 @@
 						<td><span id="q-stime">00:00</span></td>
 					</tr>
 					<tr>
-						<td>Number of questions:</td>
+						<td>Number of Questions:</td>
 						<td><span id="q-total"></span></td>
 					</tr>
 					<tr>
-						<td>Number of correct answers:</td>
+						<td>Number of Correct Answers:</td>
 						<td><span id="q-ok"></span></td>
 					</tr>
 					<tr>
-						<td>Number of wrong answers:</td>
+						<td>Number of Wrong Answers:</td>
 						<td><span id="q-wrong"></span></td>
 					</tr>
 					<tr>
-						<td>Skipped questions:</td>
+						<td>Skipped Questions:</td>
 						<td><span id="q-skipped"></span></td>
 					</tr>
 					<tr>
@@ -78,8 +82,7 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="data_q.js"></script>
-	<script type="text/javascript" src="xui.js"></script>
+	<script type="text/javascript" src="data.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

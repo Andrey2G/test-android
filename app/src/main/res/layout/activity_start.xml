@@ -7,6 +7,7 @@
     tools:context=".StartActivity">
 
  <WebView
+     android:id="@+id/webView"
      android:layout_width="409dp"
      android:layout_height="729dp"
      android:layout_marginStart="1dp"
