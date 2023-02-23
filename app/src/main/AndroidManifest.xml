@@ -14,6 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KYS"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6097086159947300~3892513514"/>
+
         <activity
             android:name=".ChaptersActivity"
             android:exported="false" />
