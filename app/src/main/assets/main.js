@@ -313,7 +313,8 @@ document.getElementById("q-back").addEventListener("click",function(e) {
         prevQuestion();
     else
         //topicList();
-        window.webkit.messageHandlers.goBack.postMessage('')
+        //window.webkit.messageHandlers.goBack.postMessage('')
+        MenuFunction.onButtonClick();
 });
 
 document.getElementById("q-show-details").addEventListener("click",function(e) {
