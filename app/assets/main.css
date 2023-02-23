@@ -1,0 +1,153 @@
+
+body {
+	font-family: Helvetica;
+	font-size: 12pt;
+	max-width: 2048px;
+	height: 1536px;
+	margin:0px;
+}
+
+button, input[type=text] {
+	font-size: 11pt;
+}
+
+.topic, .t-q, #q-time, #q-nlabel {
+	margin: 5px;
+	padding: 5px;
+	background-color: #bad859;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+#q-time {
+	border: solid 1px black;
+}
+
+#q-a, #q-b, #q-c, #q-d, .q-opt {
+	padding: 8px;
+	margin: 8px;
+	background-color: #b8ed00;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+.topic, .t-q, .q-opt, #q-hdr {
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+ul#q-options, ul.q-options {
+	list-style: upper-latin;
+}
+
+.hidden {
+	display: none;
+}
+
+a.topic {
+	display: block;
+}
+
+#q-answers {
+	margin-top: 22px;
+	padding: 16px;
+	background-color: #bad859;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+#q-details h3, .q-correct, #q-module, #q-topic, #q-nlabel {
+	text-align: center;
+}
+
+#q-topic {
+	margin: 5px;
+}
+
+#q-hdr button {
+	width: 5em;
+}
+
+#q-hdr {
+	width: 250px;
+	margin: 0 auto;
+}
+
+#q-hdr-b {
+	width: 230px;
+	margin: 0 auto;
+}
+
+#q-yes-no div {
+	width: 13em;
+	margin: 2em auto;
+}
+
+#q-yes-no button {
+	font-size: 14pt;
+	width: 5em;
+}
+
+#q-show-details {
+	margin-top: 1em;
+}
+
+#q-words {
+	margin: 1em auto;
+	width: 14em;
+}
+
+#q-rimg {
+	width: 32px;
+	height: 32px;
+}
+
+#q-rimg.s {
+	background-image: url(s3.png);
+}
+
+#q-rimg.u {
+	background-image: url(u3.png);
+}
+
+#q-msg {
+	font-weight: bold;
+}
+
+#q-msg.s:after {
+	content: "You have passed the test!";
+}
+
+#q-msg.u:after {
+	content: "Unfortunately you have not passed the test!";
+}
+
+.q-correct:after {
+	content: "Correct answer:";
+}
+
+#q-module {
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.q-back:after {
+	content: "Back";
+}
+
+.q-menu:after {
+	content: "Menu";
+}
+
+
+#q-start-more div {
+	width: 13em;
+	margin: 2em auto;
+}
+
+#q-start-more button {
+	font-size: 14pt;
+	width: 5em;
+	/*background-color: #90EE90;*/
+}

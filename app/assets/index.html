@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+	<meta name="viewport" content="width=device-width,user-scalable=no" />
+</head>
+<body>
+	<div id="q-module"></div>
+	<div id="t-list"></div>
+	<div id="questions" class="hidden">
+		<div id="q-hdr">
+			<div id="q-topic">topic</div>
+			<div id="q-hdr-b">
+				<button id="q-back" class="q-back"></button>
+				<span id="q-time"></span>
+				<button id="q-skip">Skip</button>
+			</div>
+		</div>
+		<div class="t-cont">
+			<div id="q-questions">
+				<div id="q" class="t-q"></div>
+				<ul id="q-options">
+          <li id="q-a" class="q-opt"></li>
+					<li id="q-b" class="q-opt"></li>
+					<li id="q-c" class="q-opt"></li>
+					<li id="q-d" class="q-opt"></li>
+				</ul>
+				<div id="q-yes-no" class="hidden">
+					<div>
+						<button id="q-yes">True</button>
+						&nbsp;&nbsp;
+						<button id="q-no">False</button>
+					</div>
+				</div>
+				<div id="q-words" class="hidden">
+					<input type="text" id="q-input"><button id="q-words-ok">OK</button>
+				</div>
+				<div id="q-nlabel">Question <span id="q-num"></span> of 10</div>
+			</div>
+			<div id="q-answers" class="hidden">
+				<table width="100%">
+					<tr>
+						<td colspan="2">
+							<table><tr>
+								<td><div id="q-rimg"></div></td>
+								<td valign="middle"><div id="q-msg"></div></td>
+							</tr></table>
+						</td>
+					</tr>
+					<tr>
+						<td>Total Test Time:</td>
+						<td><span id="q-stime">00:00</span></td>
+					</tr>
+					<tr>
+						<td>Number of questions:</td>
+						<td><span id="q-total"></span></td>
+					</tr>
+					<tr>
+						<td>Number of correct answers:</td>
+						<td><span id="q-ok"></span></td>
+					</tr>
+					<tr>
+						<td>Number of wrong answers:</td>
+						<td><span id="q-wrong"></span></td>
+					</tr>
+					<tr>
+						<td>Skipped questions:</td>
+						<td><span id="q-skipped"></span></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center"><button id="q-show-details">Solution</button></td>
+					</tr>
+				</table>
+			</div>
+			<div id="q-details" class="hidden">
+				<h3>Wrong answers</h3>
+				<div id="q-wa">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="data_q.js"></script>
+	<script type="text/javascript" src="xui.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

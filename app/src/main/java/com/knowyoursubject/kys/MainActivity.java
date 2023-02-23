@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if(view.getId() == R.id.btnStart){
             //define a new Intent for the second Activity
-            //Intent intent = new Intent(this,StartActivity.class);
+            Intent intent = new Intent(this,StartActivity.class);
             //start the second Activity
-            //this.startActivity(intent);
+            this.startActivity(intent);
         }
         if(view.getId() == R.id.btnMore){
             String url = "http://www.knowyoursubject.com";
